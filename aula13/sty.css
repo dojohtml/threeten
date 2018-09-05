@@ -1,0 +1,63 @@
+.teste{
+	-webkit-border-radius: 10px 20px 30px 40px;
+	border-radius: 10px 20px 30px 40px;
+	border: 1px solid;
+	-webkit-box-shadow:inset 1px 2px 3px 4px #FFE45E;
+	box-shadow: 1px 2px 3px 4px #FFE45E;
+	border: 1px solid;
+	height: 100px;
+
+}
+.top{
+	text-shadow: 5px 10px 10px black;
+	font-size: 150px;
+}
+
+.colunas{
+	-moz-column-count: 5;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 5;
+	column-gap: 20px;
+	text-align: justify;
+
+}
+.color{
+	margin-top: 25px;
+	min-height: 30px;
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 26%,rgba(30,87,153,0.86) 36%,rgba(125,185,232,0) 100%); 
+}
+
+.a{fill:#f94867;}
+.b{fill:#363d47;}
+.c{fill:#4f5564;}
+.d{fill:#eee;}
+.e{fill:#fff;}
+.f{fill:none;stroke:#363d47;stroke-miterlimit:10;}
+.g{fill:#fdd303;}
+.h{fill:#f9ce00;}
+/*.g, .h{
+	transition: fill 2s;
+}
+
+.g:hover{
+	fill: #f94867;
+	
+}
+.h:hover{
+	fill:#f94867;
+
+}*/
+.g,.h{
+	animation-name: example;
+	animation-duration: 0.1s;
+	position: relative;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes example {
+    
+    0%   {fill: #fdd303}  
+    100% {fill: #f94867}
+}
